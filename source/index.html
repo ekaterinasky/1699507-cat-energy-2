@@ -132,7 +132,7 @@
             </li>
             <li class="slider__item">
               <picture>
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index-images/cat-after-tablet-desctop@1x.png 1x, images/index-images/cat-after-tablet-desktop@2x.png 2x">
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index-images/cat-after-tablet-desctop@1x.png 1x, images/index-images/cat-after-tablet-desctop@2x.png 2x">
                 <img src="images/index-images/cat-after-mobile@1x.png" srcset="images/index-images/cat-after-mobile@2x.png 2x" alt="Худой кот" width="280" height="256">
               </picture>
             </li>
@@ -155,7 +155,11 @@
   </section>
   <footer class="main-footer">
     <h2 class="visually-hidden">Как нас найти</h2>
-    <img src="№" alt="Мы на карте" width="320" height="362">
+    <picture>
+      <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
+      <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
+      <img src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Мы на карте" width="320" height="362">
+    </picture>
     <!-- <iframe src="#" frameborder="0"></iframe> -->
     <div class="main-footer__wrapper">
       <img class="main-footer__logo logo" src="#" alt="Логотип слоган" width="128" height="24">
