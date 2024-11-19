@@ -1,7 +1,11 @@
 .page {
-font-size: 24px;
+
 }
 
 .page__body {
-
+  font-family: $primary-font;
+  color: $base-color-text;
+  font-size: $base-font-size-text;
+  line-height: $base-line-height;
+  font-weight: $font-weight;
 }
