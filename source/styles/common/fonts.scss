@@ -1,3 +1,5 @@
+@use "./mixins.scss" as *;
+
 /* здесь подключите шрифты */
 $primary-font: "Lato", "Arial", sans-serif;
 $additional-font: "Oswald", "Arial", sans-serif;
