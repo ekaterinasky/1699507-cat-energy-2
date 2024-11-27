@@ -1,10 +1,13 @@
-// .news {
+@use "../common/fonts.scss" as *;
+@use "../common/variables.scss" as *;
 
-// }
+.news {
+  //
+}
 
-// .news__wrapper {
-
-// }
+.news__wrapper {
+  //
+}
 
 .news__title {
   font-family: $additional-font;
@@ -21,9 +24,9 @@
   color: $optional-color;
 }
 
-// .news__form {
-
-// }
+.news__form {
+  //
+}
 
 .news__field {
   font-family: $additional-font;

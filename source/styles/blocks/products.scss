@@ -1,10 +1,13 @@
-// .products {
+@use "../common/fonts.scss" as *;
+@use "../common/variables.scss" as *;
 
-// }
+.products {
+  //
+}
 
-// .products__wrapper {
-
-// }
+.products__wrapper {
+  //
+}
 
 .products__title {
   font-family: $additional-font;
@@ -19,13 +22,13 @@
   line-height: 16px;
 }
 
-// .products__item {
+.products__item {
+  //
+}
 
-// }
-
-// .products__image {
-
-// }
+.products__image {
+  //
+}
 
 .products__subtitle {
   font-family: $additional-font;
@@ -40,9 +43,9 @@
   }
 }
 
-// .products__list {
-
-// }
+.products__list {
+  //
+}
 
 .products__link {
   font-size: 16px;

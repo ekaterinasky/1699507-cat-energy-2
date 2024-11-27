@@ -1,10 +1,13 @@
-// .example {
+@use "../common/fonts.scss" as *;
+@use "../common/variables.scss" as *;
 
-// }
+.example {
+  //
+}
 
-// .example__wrapper {
-
-// }
+.example__wrapper {
+  //
+}
 
 .example__title {
   font-family: $additional-font;
@@ -14,25 +17,25 @@
   font-weight: $font-weight;
 }
 
-// .example__description {
+.example__description {
+  //
+}
 
-// }
+.example__checklist {
+  //
+}
 
-// .example__checklist {
+.example__checklist--wrapper {
+  //
+}
 
-// }
+.example__list {
+  //
+}
 
-// .example__checklist--wrapper {
-
-// }
-
-// .example__list {
-
-// }
-
-// .example__stats {
-
-// }
+.example__stats {
+  //
+}
 
 .example__subtitle {
   font-family: $additional-font;
@@ -54,6 +57,6 @@
   color: $optional-color;
 }
 
-// .example__toggles {
-
-// }
+.example__toggles {
+  //
+}
