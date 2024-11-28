@@ -12,3 +12,11 @@
   line-height: $base-line-height;
   font-weight: $font-weight;
 }
+
+.page__header {
+  font-family: $additional-font;
+  font-weight: $font-weight;
+  font-size: 36px;
+  line-height: 36px;
+  color: $optional-color;
+}
