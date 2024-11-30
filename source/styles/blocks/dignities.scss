@@ -13,6 +13,12 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+  }
 }
 
 .dignities__item {
@@ -48,6 +54,10 @@
     left: 13px;
     top: 35px;
     z-index: 1;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 570px;
   }
 }
 

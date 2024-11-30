@@ -8,4 +8,12 @@
   line-height: 20px;
   color: $additional-color;
   text-transform: $text-transform;
+  text-decoration: none;
+}
+
+.button__products {
+  display: block;
+  width: 100%;
+  padding: 10px 109px;
+  margin-bottom: 32px;
 }

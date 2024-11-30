@@ -7,7 +7,7 @@
 }
 
 .advantages__wrapper {
-  //
+
 }
 
 .advantages__title {
@@ -20,10 +20,18 @@
 
 .advantages__list {
   list-style-type: none;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item {
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
 
   &::before {
     content: "";
@@ -66,10 +74,13 @@
   }
 }
 
-.advantages__item--useful {
-  //
+.advantages__description {
+  width: 200px;
+  min-height: 54px;
+  margin-left: 20px;
 }
 
-.advantages__description {
-  //
+.advantages__item--time {
+  margin-bottom: 49px;
 }
+

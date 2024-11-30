@@ -2,11 +2,11 @@
 @use "../common/variables.scss" as *;
 
 .products {
-  //
+
 }
 
 .products__wrapper {
-  //
+
 }
 
 .products__text {
@@ -15,11 +15,14 @@
 }
 
 .products__item {
-  //
+  &--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .products__image {
-  //
+
 }
 
 .products__subtitle {
@@ -29,14 +32,16 @@
   text-transform: $text-transform;
   color: $ad-special_dark-grey;
   font-weight: $font-weight;
+  width: 76px;
 
   &--change {
+    width: 204px;
     color: #111111;
   }
 }
 
 .products__list {
-  //
+  list-style-type: none;
 }
 
 .products__link {
@@ -44,3 +49,4 @@
   color: $base-color-text;
   line-height: 20px;
 }
+
