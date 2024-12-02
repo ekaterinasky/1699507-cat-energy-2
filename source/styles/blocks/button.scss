@@ -16,4 +16,27 @@
   width: 100%;
   padding: 10px 109px;
   margin-bottom: 32px;
+
+  &--change {
+    background-color: #f2f2f2;
+    color: #444444;
+    padding: 10px 80px;
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    padding: 10px 94px;
+  }
+
+  &--additional {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
+      padding: 10px 91px;
+    }
+  }
 }

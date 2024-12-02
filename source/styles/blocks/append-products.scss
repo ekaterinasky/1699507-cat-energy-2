@@ -2,11 +2,20 @@
 @use "../common/variables.scss" as *;
 
 .append-products {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
 
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .append-products__wrapper {
-
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .append-products__title {
@@ -16,14 +25,29 @@
   color: $optional-color;
   font-weight: $font-weight;
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+  }
 }
 
 .append-products__list {
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    outline: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+  }
 }
 
 .append-products__item {
-
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .append-products__subtitle {
@@ -55,6 +79,13 @@
     background-size: 78px 80px;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    position: absolute;
+    bottom: 80px;
+    right: 62px;
   }
 }
 
