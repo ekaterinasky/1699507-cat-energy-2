@@ -5,10 +5,16 @@
   background-color: #eaeaea;
   padding-top: 25px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(#ffffff 72%, #eaeaea 50%);
+  }
 }
 
 .example__wrapper {
-  margin: 0 auto;
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .example__title {

@@ -28,24 +28,6 @@
   }
 }
 
-.products__item {
-  &--wrapper {
-    display: flex;
-    flex-wrap: wrap;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 324px;
-    background-color: #f2f2f2;
-    margin-bottom: 120px;
-  }
-}
-
 .products__image {
   display: block;
 }
