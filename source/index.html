@@ -20,17 +20,19 @@
   <header class="main-header">
     <nav class="main-nav">
       <div class="wrapper">
-        <a class="main-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="60" height="50" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="33" height="38" type="image/svg+xml">
-            <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип - кот">
-          </picture>
-          <img class="logo-slogan" src="images/logo-text.svg" alt="Логотип - слоган" width="101" height="18">
-        </a>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="main-nav__user">
+          <a class="main-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="60" height="50" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="33" height="38" type="image/svg+xml">
+              <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип - кот">
+            </picture>
+            <img class="logo-slogan" src="images/logo-text.svg" alt="Логотип - слоган" width="101" height="18">
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
       </div>
       <div class="main-nav__wrapper">
         <ul class="site-list main-nav__list">
@@ -170,7 +172,7 @@
     <picture>
       <source width="1220" height="400" type="image/png" media="(min-width: 1220px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
       <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
-      <img src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Мы на карте" width="320" height="362">
+      <img class="main-footer__location" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Мы на карте" width="320" height="362">
     </picture>
     <!-- <iframe src="#" frameborder="0"></iframe> -->
     <div class="wrapper">
