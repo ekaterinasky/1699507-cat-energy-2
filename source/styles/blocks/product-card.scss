@@ -57,6 +57,11 @@
   font-weight: $font-weight;
   width: 76px;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 125px;
+  }
+
   &--change {
     width: 204px;
     color: #111111;
