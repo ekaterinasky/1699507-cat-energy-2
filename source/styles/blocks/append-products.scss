@@ -2,6 +2,8 @@
 @use "../common/variables.scss" as *;
 
 .append-products {
+  padding-top: 25px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 80px;
   }
@@ -21,12 +23,13 @@
 }
 
 .append-products__title {
+  margin: 0;
   font-family: $additional-font;
   font-size: 24px;
   line-height: 24px;
   color: $optional-color;
   font-weight: $font-weight;
-  margin-bottom: 49px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     padding-left: 50px;
@@ -48,12 +51,17 @@
 }
 
 .append-products__item {
+  padding-top: 13px;
+  padding-bottom: 17px;
+  border-top: 1px solid #cdcdcd;
+
   @media (min-width: $desktop-width) {
     display: flex;
   }
 }
 
 .append-products__subtitle {
+  margin: 0;
   font-family: $additional-font;
   font-size: 16px;
   line-height: 16px;
@@ -77,11 +85,18 @@
 .append-products__surprise {
   background-color: $bg-basic-green;
 
-  &--present {
+  &--present::before {
+    content: "";
+    position: relative;
     background-image: url("../../icons/stack.svg#present-icon");
+    display: block;
     background-size: 78px 80px;
     background-repeat: no-repeat;
-    background-position: center;
+    width: 78px;
+    height: 80px;
+    margin: 0 auto;
+    top: 59px;
+    background-position: center center;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,7 +110,14 @@
   line-height: 20px;
   color: $additional-color;
   padding-bottom: 44px;
-  padding-top: 188px;
+  padding-top: 92px;
   width: 161px;
   min-height: 60px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.append-products__volume p {
+  margin: 0;
 }
