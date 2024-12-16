@@ -11,20 +11,6 @@
   column-gap: 60px;
 }
 
-.products__list {
-  list-style-type: none;
-}
-
-.products__picture {
-  @media (min-width: $tablet-width) {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: -70px;
-    margin-bottom: -70px;
-  }
-}
-
 .products__more {
   text-align: center;
 

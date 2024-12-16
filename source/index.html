@@ -18,7 +18,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="wrapper">
         <div class="main-nav__user">
           <a class="main-header__logo" href="index.html">
@@ -29,7 +29,7 @@
             </picture>
             <img class="logo-slogan" src="images/logo-text.svg" alt="Логотип - слоган" width="101" height="18">
           </a>
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <button class="main-nav__toggle main-nav__toggle--open" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -82,12 +82,12 @@
         <ul class="dignities__list">
           <li class="dignities__item dignities__item--loss">
             <h3 class="dignities__title">Похудение</h3>
-            <p class="dignities__description">Ваш кот весит больше собаки и почти <br> утратил способность лазить по деревьям? <br> Пора на диету! Cat Energy Slim поможет <br> вашему питомцу сбросить лишний вес.</p>
+            <p class="dignities__description">Ваш кот весит больше собаки и <br> почти утратил способность лазить <br> по деревьям? Пора на диету! Cat <br> Energy Slim поможет вашему <br> питомцу сбросить лишний вес.</p>
             <a class="dignities__link dignities__link--arrow" href="#">Каталог Slim</a>
           </li>
           <li class="dignities__item dignities__item--fat">
             <h3 class="dignities__title">Набо массы</h3>
-            <p class="dignities__description">Заработать авторитет среди дворовых котов <br> и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br> мышцы!</p>
+            <p class="dignities__description">Заработать авторитет среди <br> дворовых котов и даже собак? <br> Серия Cat Energy Pro поможет вашему коту нарастить <br> необходимые мышцы!</p>
             <a class="dignities__link dignities__link--arrow" href="#">Каталог Pro</a>
           </li>
         </ul>
@@ -201,6 +201,8 @@
         </div>
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Академии">HTML Academy
+          </a>
+          <a class="copyright__academy" href="#" aria-label="Логотип HTML Академии">
             <svg class="copyright__logo" width="27" height="34">
               <use href="../icons/stack.svg#logo-html"></use>
             </svg>

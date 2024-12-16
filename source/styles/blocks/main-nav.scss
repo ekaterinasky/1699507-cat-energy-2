@@ -2,7 +2,9 @@
 @use "../common/variables.scss" as *;
 
 .main-nav {
+  width: 100%;
   min-height: 65px;
+  transition: max-height 0.5s ease-out;
 }
 
 .main-nav__user {
@@ -11,21 +13,52 @@
 }
 
 .main-nav__toggle {
-  background-color: #ffffff;
-  background-image: url("../../icons/stack.svg#burger-button");
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
+  padding: 0;
   border: none;
-  margin-left: 58px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  margin-left: 60px;
+  background-color: #ffffff;
+  transition: all 0.2s ease-out;
 
-  &--close {
+  &--open::before {
+    position: relative;
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 2px;
+    margin-left: -2px;
+    background-image: url("../../icons/stack.svg#burger-button");
+  }
+
+  &--closed::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
     background-image: url("../../icons/stack.svg#close-button");
   }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+// Навигация
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
 }
 
 .main-nav__wrapper {
@@ -42,5 +75,9 @@
 }
 
 .main-nav__list {
+  padding: 0;
 
+  &--closed {
+    display: none;
+  }
 }

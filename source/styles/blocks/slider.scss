@@ -6,7 +6,9 @@
 }
 
 .slider__list {
+  margin: 0;
   list-style-type: none;
+  padding: 0;
 }
 
 .slider__item {
@@ -26,6 +28,7 @@
   left: 50%;
   border: none;
   border-radius: 2px;
+  padding: 0;
 
   &::before {
     content: "";

@@ -35,6 +35,7 @@
 
 .append-products__list {
   list-style-type: none;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     padding: 26px 38px 28px;

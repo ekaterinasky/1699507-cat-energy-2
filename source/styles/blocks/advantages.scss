@@ -20,6 +20,7 @@
 .advantages__list {
   list-style-type: none;
   width: 280px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -106,6 +107,7 @@
 }
 
 .advantages__description {
+  margin: 0;
   width: 200px;
   min-height: 54px;
   margin-left: 20px;
