@@ -18,9 +18,10 @@
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav">
       <div class="wrapper">
-        <div class="main-nav__user">
+        <!-- Close menu - main-nav__user--closed / Open menu - main-nav__user--opened  -->
+        <div class="main-nav__user main-nav__user--opened main-nav__user--nojs">
           <a class="main-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" width="60" height="50" type="image/svg+xml">
@@ -29,29 +30,29 @@
             </picture>
             <img class="logo-slogan" src="images/logo-text.svg" alt="Логотип - слоган" width="101" height="18">
           </a>
-          <button class="main-nav__toggle main-nav__toggle--open" type="button">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
+          <div class="main-nav__wrapper">
+            <ul class="site-list main-nav__list">
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="programm.html">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="main-nav__wrapper">
-        <ul class="site-list main-nav__list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="programm.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
       </div>
     </nav>
     <section class="promotion">
@@ -158,7 +159,7 @@
       </div>
     </section>
   </main>
-  <section class="invitation">
+  <section class="invitation invitation__index">
     <div class="wrapper">
       <div class="invitation__wrapper">
         <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
@@ -169,12 +170,15 @@
   </section>
   <footer class="main-footer">
     <h2 class="visually-hidden">Как нас найти</h2>
-    <picture>
-      <source width="1220" height="400" type="image/png" media="(min-width: 1280px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
-      <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
-      <img class="main-footer__location" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Мы на карте" width="320" height="362">
-    </picture>
-    <!-- <iframe src="#" frameborder="0"></iframe> -->
+    <div class="main-footer__map">
+      <picture>
+        <source width="1220" height="400" type="image/png" media="(min-width: 1280px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
+        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
+        <img class="main-footer__location" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Мы на карте" width="320" height="362">
+      </picture>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5912562628343!2d30.3205195!3d59.9389244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1734373731553!5m2!1sru!2sru" width="100%" height="400" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+      </iframe>
+    </div>
     <div class="wrapper">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo" href="index.html">

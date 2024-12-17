@@ -3,6 +3,9 @@
 
 .slider {
   position: relative;
+  display: grid;
+  grid-template-rows: 1 256px;
+  grid-template-columns: 1 256px;
 }
 
 .slider__list {
@@ -12,7 +15,7 @@
 }
 
 .slider__item {
-
+  position: absolute;
 }
 
 .slider__toggles {

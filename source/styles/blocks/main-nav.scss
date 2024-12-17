@@ -3,67 +3,66 @@
 
 .main-nav {
   width: 100%;
-  min-height: 65px;
-  transition: max-height 0.5s ease-out;
+  position: relative;
 }
 
 .main-nav__user {
   padding-top: 13px;
-  padding-bottom: 14px;
+}
+
+.main-nav__user--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 6px 00 #000000, 0 12px 00 #000000;
+  right: 6px;
+  top: 0;
+}
+
+.main-nav__user--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+    right: 6px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav__user--closed .site-list__item {
+  display: none;
 }
 
 .main-nav__toggle {
-  padding: 0;
+  position: absolute;
+  background-color: #ffffff;
   border: none;
   background-repeat: no-repeat;
-  background-position: center center;
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
   cursor: pointer;
-  margin-left: 60px;
-  background-color: #ffffff;
-  transition: all 0.2s ease-out;
-
-  &--open::before {
-    position: relative;
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    top: 2px;
-    margin-left: -2px;
-    background-image: url("../../icons/stack.svg#burger-button");
-  }
-
-  &--closed::before {
-    content: "";
-    display: block;
-    width: 18px;
-    height: 18px;
-    background-image: url("../../icons/stack.svg#close-button");
-  }
+  right: 20px;
+  top: 25px;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-// Навигация
-
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
-.main-nav--nojs .main-nav__wrapper {
-  position: static;
-  min-height: 0;
-}
-
-.main-nav--nojs .site-list__item {
-  display: block;
-}
-
 .main-nav__wrapper {
-  display: none;
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -77,9 +76,24 @@
 }
 
 .main-nav__list {
+  margin: 0;
   padding: 0;
+}
 
-  &--closed {
-    display: none;
-  }
+
+.main-nav__user--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav__user--nojs .main-nav {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
+}
+
+.main-nav--nojs .user-list__item {
+  display: block;
 }
