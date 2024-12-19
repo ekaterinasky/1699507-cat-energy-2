@@ -2,30 +2,48 @@
 @use "../common/variables.scss" as *;
 
 .promotion {
-  background-image: url("../../images/index-images/cat-bg-mobile@2x.jpeg");
+  padding-top: 27px;
+  background-color: rgba(104, 183, 56, 0.9);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.9,) 302px, #ffffff 302px), url("../../images/index-images/cat-bg-mobile@1x.jpeg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    background-color: #ffffff;
+  }
 }
 
 .promotion__wrapper {
-  //
+
 }
 
 .promotion__header {
-  //
+
 }
 
 .promotion__title {
+  margin: 0;
+  margin-bottom: 25px;
   font-family: $additional-font;
   font-size: 36px;
   line-height: 36px;
   color: $additional-color;
   font-weight: $font-weight;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    width: 430px;
+    text-align: left;
+    margin-left: 100px;
+  }
 }
 
 .promotion__intro {
+  margin: 0;
   font-family: $additional-font;
   line-height: 14px;
   color: $additional-color;
@@ -35,7 +53,7 @@
 }
 
 .promotion__intro--succeed {
-  //
+
 }
 
 .promotion__image {
@@ -47,9 +65,11 @@
   text-decoration: none;
   padding: 10px 64px;
   width: 280px;
+
+  &--succeed {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
-.promotion__link--succeed {
-  display: block;
-  margin: 0 auto;
-}

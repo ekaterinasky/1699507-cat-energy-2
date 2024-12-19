@@ -10,7 +10,9 @@
 }
 
 .dignities__list {
+  margin: 0;
   list-style-type: none;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -20,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 80px;
-    width: 1220px;
+    width: 1280px;
   }
 }
 
@@ -83,6 +85,7 @@
 }
 
 .dignities__title {
+  margin: 0;
   font-family: $additional-font;
   font-size: 24px;
   line-height: 37px;
@@ -159,9 +162,11 @@
 }
 
 .dignities__description {
-  width: 227px;
-  margin-bottom: 38px;
+  margin: 0;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 22px;
   padding-left: 20px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     width: 340px;

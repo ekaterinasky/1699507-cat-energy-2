@@ -11,9 +11,11 @@
   font-size: $base-font-size-text;
   line-height: $base-line-height;
   font-weight: $font-weight;
+  margin: 0;
 }
 
 .page__header {
+  margin: 0;
   font-family: $additional-font;
   font-weight: $font-weight;
   font-size: 36px;

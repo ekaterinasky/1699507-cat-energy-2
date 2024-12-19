@@ -11,22 +11,20 @@
   column-gap: 60px;
 }
 
-.products__list {
-  list-style-type: none;
-}
-
-.products__picture {
-  @media (min-width: $tablet-width) {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: -70px;
-    margin-bottom: -70px;
-  }
-}
-
 .products__more {
   text-align: center;
+
+  &--image::before {
+    content: "";
+    margin: auto;
+    margin-bottom: 24px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../icons/stack.svg#plus");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
   @media (min-width: $tablet-width) {
     width: 324px;

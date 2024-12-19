@@ -6,11 +6,24 @@
 }
 
 .slider__list {
+  margin: 0;
   list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 128px 128px;
+  grid-template-columns: 140px 140px;
 }
 
 .slider__item {
+  position: absolute;
 
+  &--before {
+
+  }
+
+  &--after {
+
+  }
 }
 
 .slider__toggles {
@@ -26,6 +39,7 @@
   left: 50%;
   border: none;
   border-radius: 2px;
+  padding: 0;
 
   &::before {
     content: "";

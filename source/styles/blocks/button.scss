@@ -36,6 +36,8 @@
   }
 
   &--additional {
+    margin-bottom: 0;
+
     @media (min-width: $tablet-width) {
       width: 100%;
     }

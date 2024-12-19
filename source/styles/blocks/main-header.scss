@@ -19,10 +19,16 @@
 }
 
 .main-header__logo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
   height: 38px;
+  width: 200px;
 
   @media (min-width: $tablet-width) {
     height: 50px;
+    width: 174px;
+    margin-right: 84px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,4 +36,9 @@
   }
 }
 
-// .main-header__logo-image {}
+.main-header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 50px;
+  }
+}
