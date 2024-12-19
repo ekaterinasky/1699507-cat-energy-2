@@ -3,19 +3,27 @@
 
 .slider {
   position: relative;
-  display: grid;
-  grid-template-rows: 1 256px;
-  grid-template-columns: 1 256px;
 }
 
 .slider__list {
   margin: 0;
   list-style-type: none;
   padding: 0;
+  display: grid;
+  grid-template-rows: 128px 128px;
+  grid-template-columns: 140px 140px;
 }
 
 .slider__item {
   position: absolute;
+
+  &--before {
+
+  }
+
+  &--after {
+
+  }
 }
 
 .slider__toggles {

@@ -8,6 +8,12 @@
 
 .main-nav__user {
   padding-top: 13px;
+
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-top: 25px;
+  }
 }
 
 .main-nav__user--closed .main-nav__toggle::before {

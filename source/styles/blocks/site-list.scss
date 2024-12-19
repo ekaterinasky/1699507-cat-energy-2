@@ -2,7 +2,6 @@
 @use "../common/variables.scss" as *;
 
 .site-list {
-  margin-top: 14px;
   list-style-type: none;
   font-family: $additional-font;
   line-height: 20px;
@@ -11,6 +10,10 @@
   display: block;
   padding: 0;
 
+  &--change {
+    margin-top: 14px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -18,6 +21,7 @@
     font-size: 18px;
     line-height: 24px;
     width: 436px;
+    gap: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,6 +43,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     border: none;
+    padding: 0;
   }
 }
 
@@ -60,5 +65,10 @@
 }
 
 .site-list__item--active {
-
+  @media (min-width: $tablet-width) {
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    color: $bg-basic-green;
+    text-decoration-thickness: 2px;
+  }
 }

@@ -31,6 +31,15 @@
   color: $additional-color;
   font-weight: $font-weight;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    width: 430px;
+    text-align: left;
+    margin-left: 100px;
+  }
 }
 
 .promotion__intro {
