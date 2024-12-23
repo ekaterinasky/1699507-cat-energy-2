@@ -20,8 +20,8 @@
   <header class="main-header">
     <nav class="main-nav">
       <div class="wrapper">
-        <!-- Close menu - main-nav__user--closed / Open menu - main-nav__user--opened  -->
-        <div class="main-nav__user main-nav__user--opened main-nav__user--nojs">
+        <!-- Close menu - main-nav__usermain-header__logo--closed / Open menu - main-nav__user--opened  -->
+        <div class="main-nav__user main-nav__user--closed main-nav__user--nojs">
           <a class="main-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" width="60" height="50" type="image/svg+xml">
@@ -64,11 +64,13 @@
           <p class="promotion__intro promotion__intro--succeed">
             Занялся собой? Займись котом!
           </p>
-          <picture>
-            <source width="552" height="499" type="image/png" media="(min-width: 1280px)" srcset="images/index-images/pot-promo-desktop@1x.png 1x, images/index-images/pot-promo-desktop@2x.png 2x">
-            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-images/pot-promo-tablet@1x.png 1x, images/index-images/pot-promo-tablet@2x.png 2x">
-            <img class="promotion__image" src="images/index-images/pot-pomo-mobile@1x.png" srcset="images/index-images/pot-pomo-mobile@2x.png 2x" width="280" height="270" alt="Кошачье питание в баночке">
-          </picture>
+          <div class="promotion__container">
+            <picture>
+              <source width="552" height="499" type="image/png" media="(min-width: 1280px)" srcset="images/index-images/pot-promo-desktop@1x.png 1x, images/index-images/pot-promo-desktop@2x.png 2x">
+              <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-images/pot-promo-tablet@1x.png 1x, images/index-images/pot-promo-tablet@2x.png 2x">
+              <img class="promotion__image" src="images/index-images/pot-pomo-mobile@1x.png" srcset="images/index-images/pot-pomo-mobile@2x.png 2x" width="280" height="270" alt="Кошачье питание в баночке">
+            </picture>
+          </div>
           <a class="button promotion__link promotion__link--succeed" href="programm.html">
             Подобрать программу
           </a>
@@ -131,10 +133,15 @@
                   <p class="example__signature">затрачено времени</p>
                 </li>
               </ul>
-              <p class="example__text">Затраты на питание: 15 000 РУБ.</p>
+              <div class="example__container">
+                <p class="example__text">Затраты на питание:</p>
+                <p class="example__text example__text--change ">15 000 <span>руб.</span></p>
+              </div>
             </div>
           </div>
-          <div class="slider">
+        </div>
+        <div class="slider">
+          <div class="wrap">
             <ul class="slider__list">
               <li class="slider__item slider__item--before">
                 <picture>
@@ -164,7 +171,10 @@
       <div class="invitation__wrapper">
         <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
         <p class="invitation__description">приглашаем к сотрудничеству дилеров!</p>
-        <p class="invitation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="intation__container">
+          <p class="invitation__adress">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="invitation__adress invitation__adress--change">Санкт-Петербург</p>
+        </div>
       </div>
     </div>
   </section>

@@ -5,6 +5,11 @@
   padding-top: 26px;
   padding-bottom: 26px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .invitation__index {
@@ -15,7 +20,8 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-around;
+    width: 628px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +40,9 @@
 
   @media (min-width: $tablet-width) {
     width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-right: auto;
   }
 }
 
@@ -41,8 +50,20 @@
   margin: 0;
   width: 140px;
   line-height: 20px;
+  font-size: 16px;
+
+  &--change {
+    margin-top: 0;
+  }
 
   @media (min-width: $tablet-width) {
     width: 157px;
+    margin-left: auto;
+    text-align: right;
+
+    &--change {
+      margin-top: 24px;
+    }
   }
 }
+

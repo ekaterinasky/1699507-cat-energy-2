@@ -10,15 +10,22 @@
   list-style-type: none;
   padding: 0;
   display: grid;
-  grid-template-rows: 128px 128px;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: 280px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 560px;
+  }
 }
 
 .slider__item {
-  position: absolute;
+  grid-column: 1 / -1;
+  grid-row: 1 /-1;
+
 
   &--before {
-
+    width: 50%;
+    z-index: 1;
+    overflow: hidden;
   }
 
   &--after {
@@ -40,6 +47,7 @@
   border: none;
   border-radius: 2px;
   padding: 0;
+  z-index: 2;
 
   &::before {
     content: "";

@@ -2,7 +2,10 @@
 @use "../common/variables.scss" as *;
 
 .advantages {
-
+  @media (min-width: $tablet-width) {
+    padding-bottom: 46px;
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .advantages__wrapper {
@@ -15,6 +18,14 @@
   line-height: 40px;
   color: $optional-color;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 45px;
+    margin-bottom: 67px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
@@ -23,6 +34,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 250px);
     gap: 135px 135px;
@@ -55,6 +67,11 @@
     background-size: 30px 32px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--powder::before {
@@ -63,6 +80,11 @@
     background-size: 26px 29px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--meal::before {
@@ -71,6 +93,11 @@
     background-size: 25px 30px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--time::before {
@@ -79,6 +106,11 @@
     background-size: 26px 31px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -96,12 +128,8 @@
       font-weight: $font-weight;
       z-index: -1;
       top: -42px;
-      right: 44px;
+      right: 0;
       display: block;
-
-      @media (min-width: $desktop-width) {
-        right: 0;
-      }
     }
   }
 }
@@ -115,6 +143,9 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-top: 31px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 245px;
   }
 }
 

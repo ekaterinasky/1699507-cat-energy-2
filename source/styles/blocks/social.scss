@@ -9,6 +9,10 @@
   display: flex;
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__item:not(:first-child) {

@@ -49,6 +49,10 @@
 
 .main-nav__user--closed .site-list__item {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .main-nav__toggle {
@@ -74,6 +78,8 @@
     justify-content: space-between;
     width: 704px;
     margin: 0 auto;
+    flex-wrap: wrap;
+    flex-shrink: 0;
   }
 
   @media (min-width: $desktop-width) {

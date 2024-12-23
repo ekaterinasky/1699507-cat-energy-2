@@ -25,7 +25,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 475px;
+    width: 477px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: auto;
   }
 }
 
@@ -38,6 +41,20 @@
 
   &--active {
     display: block;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: $bg-basic-green;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -64,11 +81,3 @@
   }
 }
 
-.site-list__item--active {
-  @media (min-width: $tablet-width) {
-    text-decoration: underline;
-    text-underline-offset: 12px;
-    color: $bg-basic-green;
-    text-decoration-thickness: 2px;
-  }
-}

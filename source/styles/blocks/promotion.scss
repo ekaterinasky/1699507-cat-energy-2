@@ -9,6 +9,7 @@
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
+    padding-top: 65px;
     background-image: none;
     background-color: #ffffff;
   }
@@ -33,7 +34,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    color: #000000;
+    color: $optional-color;
     font-size: 60px;
     line-height: 60px;
     width: 430px;
@@ -50,6 +51,15 @@
   text-transform: $text-transform;
   text-align: center;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    color: $optional-color;
+    font-size: 20px;
+    line-height: 20;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: -165px;
+  }
 }
 
 .promotion__intro--succeed {
@@ -59,6 +69,11 @@
 .promotion__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -198px;
+    margin-left: 20px;
+  }
 }
 
 .promotion__link {
@@ -66,10 +81,24 @@
   padding: 10px 64px;
   width: 280px;
 
+  @media (min-width: $tablet-width) {
+    padding: 14px 24px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
   &--succeed {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      z-index: 1;
+      top: 380px;
+      width: 242px;
+      left: 132px;
+    }
   }
 }
 
