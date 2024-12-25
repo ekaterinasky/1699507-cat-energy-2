@@ -9,6 +9,12 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
 }
 
 .products__more {
@@ -27,6 +33,11 @@
     background-image: url("../../icons/stack.svg#plus");
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   @media (min-width: $tablet-width) {

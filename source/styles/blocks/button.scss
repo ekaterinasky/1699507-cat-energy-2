@@ -35,6 +35,11 @@
     padding: 10px 80px;
     margin-left: 20px;
     margin-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 250px;
+      margin: 0 auto;
+    }
   }
 
   &--additional {

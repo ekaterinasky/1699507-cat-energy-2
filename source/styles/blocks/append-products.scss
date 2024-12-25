@@ -95,7 +95,10 @@
 }
 
 .append-products__surprise {
-  background-color: $bg-basic-green;
+  background-color: rgba(104, 183, 56, 0.9);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.9,) 100%, #ffffff 100%), url("../../images/cat-catalog@2x.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
 
   &--present::before {
     content: "";
