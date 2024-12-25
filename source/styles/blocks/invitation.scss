@@ -10,6 +10,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .invitation__index {
@@ -25,7 +29,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 565px;
+    position: absolute;
+    width: 570px;
+    min-height: 201px;
+    padding: 65px 90px 60px 75px;
+    background-color: #ffffff;
+    margin-top: 95px;
+    margin-left: -50px;
   }
 }
 
@@ -49,8 +59,6 @@
 .invitation__adress {
   margin: 0;
   width: 140px;
-  line-height: 20px;
-  font-size: 16px;
 
   &--change {
     margin-top: 0;
@@ -60,10 +68,16 @@
     width: 157px;
     margin-left: auto;
     text-align: right;
+    line-height: 20px;
+    font-size: 16px;
 
     &--change {
       margin-top: 24px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 

@@ -30,6 +30,18 @@
   color: $optional-color;
   font-weight: $font-weight;
   margin-bottom: 35px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13px;
+    z-index: -1;
+    width: 100vw;
+    height: 3px;
+    background-color: #68b738;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 50px;
@@ -53,7 +65,7 @@
 .append-products__item {
   padding-top: 13px;
   padding-bottom: 17px;
-  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $desktop-width) {
     display: flex;

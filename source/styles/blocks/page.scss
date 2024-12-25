@@ -21,7 +21,11 @@
   font-size: 36px;
   line-height: 36px;
   color: $optional-color;
-  margin-bottom: 41px;
+  margin-top: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 84px;

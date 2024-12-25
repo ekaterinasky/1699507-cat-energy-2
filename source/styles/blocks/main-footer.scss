@@ -15,6 +15,11 @@
     padding-top: 55px;
     padding-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
 }
 
 .main-footer__logo {
@@ -74,6 +79,7 @@
   border: none;
   display: block;
   height: 362px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     height: 400px;

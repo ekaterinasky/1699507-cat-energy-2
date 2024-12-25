@@ -2,6 +2,10 @@
 @use "../common/variables.scss" as *;
 
 .product-card {
+  border-bottom: 1px solid #ebebeb;
+  padding-left: 20px;
+  padding-right: 20px;
+
   @media (min-width: $tablet-width) {
     display: block;
     width: 324px;
@@ -17,6 +21,7 @@
 .product-card__wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -114,9 +119,5 @@
       margin-bottom: 23px;
     }
   }
-
-  // @media (min-width: $tablet-width) {
-  //   width: 324px;
-  // }
 }
 

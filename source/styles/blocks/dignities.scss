@@ -53,6 +53,14 @@
       margin-left: 475px;
       top: 77px;
     }
+
+    @media (min-width: $desktop-width) {
+      background-size: 70px 97px;
+      width: 70px;
+      height: 97px;
+      top: 41px;
+      margin-left: 34px;
+    }
   }
 
   &--fat::before {
@@ -74,6 +82,14 @@
       height: 200px;
       margin-left: 411px;
       top: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 134px 56px;
+      width: 134px;
+      height: 56px;
+      top: 67px;
+      margin-left: 16px;
     }
   }
 
@@ -114,6 +130,13 @@
       height: 200px;
       top: 85px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      margin-left: 25px;
+      top: 42px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -121,6 +144,11 @@
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    text-align: center;
   }
 }
 

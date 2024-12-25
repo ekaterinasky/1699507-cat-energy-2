@@ -12,15 +12,19 @@
     padding-top: 47px;
     padding-bottom: 101px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 90px;
+    padding-bottom: 75px;
+    background-image: linear-gradient(#ffffff 26%, #eaeaea 20%);
+  }
 }
 
 .example__cover {
   margin-bottom: 99px;
-}
 
-.example__wrapper {
   @media (min-width: $desktop-width) {
-    display: flex;
+    margin: 0;
   }
 }
 
@@ -38,9 +42,14 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__description {
+  margin: 0;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -49,16 +58,27 @@
     width: 704px;
     margin-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 432px;
+    margin-bottom: 69px;
+  }
 }
 
 .example__checklist {
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
-.example__checklist--wrapper {
-
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .example__list {
@@ -72,6 +92,11 @@
 
   @media (min-width: $tablet-width) {
     gap: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    margin-bottom: 55px;
   }
 }
 
@@ -87,6 +112,10 @@
     padding: 15px 57px 20px;
     width: 162px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 57px 25px;
+  }
 }
 
 .example__subtitle {
@@ -98,6 +127,11 @@
   line-height: 24px;
   text-transform: $text-transform;
   color: $optional-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__signature {
@@ -121,6 +155,10 @@
     background-color: #ffffff;
     bottom: -5px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: inherit;
+  }
 }
 
 .example__text {
@@ -143,6 +181,10 @@
     &--change {
       margin-top: 9px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
   }
 }
 
@@ -155,6 +197,11 @@
   @media (min-width: $tablet-width) {
     display: block;
     margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-start;
   }
 }
 

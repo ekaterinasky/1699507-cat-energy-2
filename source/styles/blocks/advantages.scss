@@ -6,6 +6,10 @@
     padding-bottom: 46px;
     border-bottom: 1px solid #e6e6e6;
   }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .advantages__wrapper {
@@ -130,6 +134,7 @@
       top: -42px;
       right: 0;
       display: block;
+      width: 136px;
     }
   }
 }
