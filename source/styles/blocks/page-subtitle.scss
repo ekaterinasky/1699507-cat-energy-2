@@ -15,7 +15,7 @@
     font-size: 32px;
     line-height: 32px;
 
-    &::before {
+    &::after {
       content: "";
       z-index: -1;
       background-color: #68b738;
@@ -24,6 +24,10 @@
       position: absolute;
       top: 13px;
       left: 0;
+
+      @media (min-width: $tablet-width) {
+        margin-top: 5px;
+      }
     }
   }
 

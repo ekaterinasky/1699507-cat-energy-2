@@ -30,7 +30,8 @@
     background-color: #eaeaea;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(#ffffff 50%, #eaeaea 50%, #eaeaea 75%);
+      background-image: linear-gradient(#ffffff 37%, #eaeaea 36%);
+      background-color: transparent;
     }
 
     @media (min-width: $desktop-width) {
