@@ -4,11 +4,27 @@
 .page-subtitle {
   font-size: 24px;
   line-height: 24px;
+  position: relative;
   color: $optional-color;
+  font-weight: $font-weight;
+  margin: 0;
+  font-family: $additional-font;
+
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
+
+    &::before {
+      content: "";
+      z-index: -1;
+      background-color: #68b738;
+      width: 100vw;
+      height: 3px;
+      position: absolute;
+      top: 13px;
+      left: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -2,7 +2,10 @@
 @use "../common/variables.scss" as *;
 
 .products {
-
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .products__container {
@@ -14,6 +17,7 @@
     width: 768px;
     margin: 0 auto;
     padding: 0 30px;
+    row-gap: 140px;
   }
 }
 
@@ -41,7 +45,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    border: 2px solid #f2f2f2;
+    padding-top: 55px;
+    padding-bottom: 39px;
     width: 324px;
-    padding: 50px 37px 40px;
   }
 }
