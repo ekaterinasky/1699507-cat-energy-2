@@ -13,6 +13,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 65px;
     background: none;
+    position: static;
   }
 
   @media (min-width: $desktop-width) {

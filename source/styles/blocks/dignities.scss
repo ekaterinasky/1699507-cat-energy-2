@@ -2,7 +2,9 @@
 @use "../common/variables.scss" as *;
 
 .dignities {
-
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+  }
 }
 
 .dignities__wrapper {
@@ -99,6 +101,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    margin: 0;
   }
 }
 
