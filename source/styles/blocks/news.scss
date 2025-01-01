@@ -5,6 +5,11 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 104px;
   }
@@ -15,6 +20,8 @@
 }
 
 .news__title {
+  margin-bottom: 32px;
+
   @media (min-width: $tablet-width) {
     padding-left: 50px;
     margin-bottom: 66px;
@@ -49,6 +56,7 @@
 .news__form {
   @media (min-width: $tablet-width) {
     padding-left: 48px;
+    display: flex;
   }
 }
 
@@ -63,6 +71,12 @@
   text-transform: $text-transform;
   border: 1px solid #cdcdcd;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 376px;
+    height: 56px;
+  }
 }
 
 .news__button {
@@ -72,4 +86,11 @@
   padding-bottom: 13px;
   border: none;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    height: 56px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }

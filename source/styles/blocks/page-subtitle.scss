@@ -9,26 +9,13 @@
   font-weight: $font-weight;
   margin: 0;
   font-family: $additional-font;
+  padding-right: 40px;
+  background-color: #ffffff;
 
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-
-    &::after {
-      content: "";
-      z-index: -1;
-      background-color: #68b738;
-      width: 100vw;
-      height: 3px;
-      position: absolute;
-      top: 13px;
-      left: 0;
-
-      @media (min-width: $tablet-width) {
-        margin-top: 5px;
-      }
-    }
   }
 
   @media (min-width: $desktop-width) {

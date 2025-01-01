@@ -3,9 +3,6 @@
 
 .product-card {
   border-bottom: 1px solid #ebebeb;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -16,6 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     width: 245px;
   }
 }

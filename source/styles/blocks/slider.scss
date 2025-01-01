@@ -30,7 +30,7 @@
     background-color: #eaeaea;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(#ffffff 190px, #eaeaea 50px);
+      background-image: linear-gradient(#ffffff 127px, #eaeaea 50px);
       background-color: transparent;
     }
 
@@ -44,7 +44,7 @@
 .slider__button {
   position: absolute;
   background-color: #666666;
-  height: 100%;
+  height: 256px;
   width: 4px;
   top: 0;
   left: 50%;
@@ -96,5 +96,9 @@
   &:active {
     background-color: $bg-basic-green;
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 513px;
   }
 }

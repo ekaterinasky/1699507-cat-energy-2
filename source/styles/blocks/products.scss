@@ -2,6 +2,8 @@
 @use "../common/variables.scss" as *;
 
 .products {
+  padding-top: 66px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -14,10 +16,11 @@
   column-gap: 60px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    margin: 0 auto;
-    padding: 0 30px;
     row-gap: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -26,6 +29,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ebebeb;
+  margin: 0 auto;
 
   &--image::before {
     content: "";
@@ -49,5 +53,10 @@
     padding-top: 55px;
     padding-bottom: 39px;
     width: 324px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }

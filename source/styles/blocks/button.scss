@@ -24,8 +24,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 244px;
-      padding: 10px 91px;
+      width: 169px;
+      padding: 10px 53px;
     }
   }
 
@@ -33,12 +33,16 @@
     background-color: #f2f2f2;
     color: #444444;
     padding: 10px 80px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 280px;
 
     @media (min-width: $tablet-width) {
       width: 250px;
       margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 169px;
+      padding: 10px 39px;
     }
   }
 
@@ -49,6 +53,11 @@
       width: 100%;
       margin: 0;
       padding: 10px 285px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
+      padding: 10px 91px;
     }
   }
 }

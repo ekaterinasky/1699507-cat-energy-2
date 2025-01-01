@@ -5,10 +5,10 @@
   position: relative;
   top: 65px;
   padding-top: 27px;
-  background-color: rgba(104, 183, 56, 0.9);
-  background-image: linear-gradient(rgba(104, 183, 56, 0.9,) 302px, #ffffff 302px), url("../../images/index-images/cat-bg-mobile@1x.jpeg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.9) 302px, #ffffff 302px), url("../../images/index-images/cat-bg-mobile@1x.jpeg");
   background-repeat: no-repeat;
   object-fit: cover;
+  background-position: top center;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
