@@ -3,6 +3,11 @@
 
 .product-card {
   border-bottom: 1px solid #ebebeb;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -10,6 +15,7 @@
     background-image: linear-gradient(#ffffff 3%, #f2f2f2 0%);
     padding-left: 37px;
     padding-right: 37px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
