@@ -3,6 +3,7 @@ const navMain = document.querySelector('.main-nav__user');
 const navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav__user--nojs');
+navMain.classList.remove('main-nav__user--opened');
 
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-nav__user--closed')) {
