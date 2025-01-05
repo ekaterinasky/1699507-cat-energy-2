@@ -15,10 +15,6 @@
     background: none;
     position: static;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 110px;
-  }
 }
 
 .promotion__wrapper {
@@ -54,6 +50,10 @@
     width: 430px;
     text-align: left;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 46px;
   }
 }
 
@@ -92,8 +92,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -210px;
-    margin-left: -182px;
+    position: relative;
+    top: -229px;
+    left: -122px;
   }
 }
 
@@ -110,18 +111,19 @@
 
   &--succeed {
     display: block;
-    margin: 0 auto;
+    margin: 2px auto;
     margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
       position: absolute;
       z-index: 1;
       top: 380px;
-      width: 242px;
+      width: 244px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 432px;
+      top: 454px;
+      padding: 14px 27px;
     }
   }
 }

@@ -59,6 +59,7 @@
     @media (min-width: $desktop-width) {
       &::after {
         background-color: #ffffff;
+        bottom: 4px;
       }
     }
   }
@@ -68,6 +69,12 @@
     border: none;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    &--change {
+      margin-left: 3px;
+    }
+  }
 }
 
 .site-list__link {
@@ -75,6 +82,7 @@
   display: block;
   text-decoration: none;
   color: $optional-color;
+  margin-left: -2px;
 
   &:hover {
     color: #000000;

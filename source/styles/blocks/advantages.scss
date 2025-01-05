@@ -30,6 +30,11 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+    margin-bottom: 71px;
+  }
 }
 
 .advantages__list {
@@ -48,7 +53,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    column-gap: 77px;
+    column-gap: 79px;
   }
 }
 
@@ -135,7 +140,7 @@
       top: -42px;
       right: 0;
       display: block;
-      width: 136px;
+      width: 128px;
     }
   }
 }
@@ -146,12 +151,26 @@
   min-height: 54px;
   margin-left: 20px;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-top: 31px;
     font-size: 16px;
     line-height: 24px;
     width: 245px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: block;
+    }
   }
 }
 

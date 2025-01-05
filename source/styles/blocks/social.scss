@@ -9,14 +9,18 @@
   display: flex;
   list-style-type: none;
   padding: 0;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     margin: 0;
   }
-}
 
-.social__item:not(:first-child) {
-  margin-left: 30px;
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    padding-top: 6px;
+    margin-left: 34px;
+    width: 132px;
+  }
 }
 
 .social__link {
@@ -31,6 +35,10 @@
   &:active::before {
     background-color: rgba($bg-basic-green, 0.5);
   }
+}
+
+.social__item {
+  margin-left: 0;
 }
 
 .social__link--vkontakte::before {
