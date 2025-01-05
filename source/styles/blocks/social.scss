@@ -13,13 +13,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    justify-content: space-between;
     padding-top: 6px;
-    margin-left: 34px;
     width: 132px;
+    margin-left: 34px;
+    justify-content: space-between;
   }
 }
 

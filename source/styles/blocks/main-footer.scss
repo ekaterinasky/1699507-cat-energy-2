@@ -39,6 +39,8 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
+    padding-top: 7px;
+    padding-left: 2px;
   }
 
   @media (min-width: $desktop-width) {
