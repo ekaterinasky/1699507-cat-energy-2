@@ -93,7 +93,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    gap: 43px;
+    gap: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,11 +112,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 15px 57px 20px;
-    width: 162px;
+    width: 161px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 15px 57px 25px;
+    width: 160px;
   }
 }
 

@@ -13,7 +13,7 @@
   background-color: #ffffff;
   box-shadow:
     -40px 0 0 0 #ffffff,
-    30px 0 0 0 #ffffff;
+    40px 0 0 0 #ffffff;
 
   &::before {
     content: "";
@@ -21,7 +21,7 @@
     right: 0;
     width: 100vw;
     height: 2px;
-    top: 50%;
+    top: 10px;
     background: $bg-basic-green;
     box-shadow: 100vw 0 0 0 $bg-basic-green;
     z-index: -1;

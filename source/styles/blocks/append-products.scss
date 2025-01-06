@@ -108,10 +108,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .append-products__text {
+  margin: 0;
   line-height: 14px;
+  margin-top: 14px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -127,6 +130,9 @@
 }
 
 .append-products__price {
+  margin: 0;
+  margin-top: 10px;
+
   @media (min-width: $tablet-width) {
     margin: 0;
     font-size: 16px;
@@ -174,12 +180,14 @@
   line-height: 20px;
   color: $additional-color;
   padding-bottom: 44px;
-  padding-top: 92px;
+  padding-top: 104px;
   width: 161px;
   min-height: 60px;
   display: block;
   text-align: center;
   margin: 0 auto;
+  margin-top: 2px;
+  margin-left: 58px;
 
   @media (min-width: $tablet-width) {
     padding-top: 71px;
