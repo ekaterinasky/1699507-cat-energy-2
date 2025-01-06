@@ -5,7 +5,7 @@
   background-color: #eaeaea;
   padding-top: 25px;
   box-sizing: border-box;
-  padding-bottom: 40px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(#ffffff 616px, #eaeaea 100px);
@@ -21,10 +21,11 @@
 }
 
 .example__cover {
-  margin-bottom: 99px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 100px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
     margin-bottom: 0;
   }
 }
@@ -143,7 +144,7 @@
   padding-right: 10px;
   position: absolute;
   bottom: -16px;
-  left: 0;
+  left: -4px;
   right: 0;
   width: 87px;
   text-align: center;
@@ -155,6 +156,7 @@
     line-height: 14px;
     background-color: #ffffff;
     bottom: -5px;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -164,13 +166,11 @@
 }
 
 .example__text {
-  margin: 0;
-  margin-top: 30px;
+  margin: 36px 2px 20px;
   font-family: $additional-font;
   line-height: 20px;
   text-transform: $text-transform;
   color: $optional-color;
-  margin-bottom: 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {

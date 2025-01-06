@@ -65,6 +65,7 @@
   text-transform: $text-transform;
   text-align: center;
   margin-bottom: 29px;
+  margin-left: -1px;
 
   @media (min-width: $tablet-width) {
     color: $optional-color;

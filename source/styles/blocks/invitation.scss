@@ -2,7 +2,7 @@
 @use "../common/variables.scss" as *;
 
 .invitation {
-  padding-top: 26px;
+  padding-top: 28px;
   padding-bottom: 26px;
   background-color: #f2f2f2;
 
@@ -65,10 +65,11 @@
   width: 140px;
 
   &--change {
-    margin-top: 0;
+    margin-top: 5px;
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     width: 157px;
     margin-left: auto;
     text-align: right;
