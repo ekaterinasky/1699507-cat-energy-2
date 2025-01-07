@@ -9,6 +9,10 @@
     flex-direction: column;
     padding-top: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 48px;
+  }
 }
 
 .products__container {
@@ -22,6 +26,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    gap: 119px 80px;
   }
 }
 

@@ -42,5 +42,12 @@
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
+    box-shadow:
+      -40px 0 0 0 #ffffff,
+      40px 0 0 0 #ffffff;
+
+    &::before {
+      top: 18px;
+    }
   }
 }
