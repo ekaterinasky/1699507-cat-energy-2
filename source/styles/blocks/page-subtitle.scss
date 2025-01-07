@@ -31,6 +31,12 @@
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
+
+    &::before {
+      top: 13px;
+    }
+
+    box-shadow: 40px 0 0 0 #ffffff;
   }
 
   @media (min-width: $desktop-width) {
