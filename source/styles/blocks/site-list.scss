@@ -22,6 +22,10 @@
     line-height: 24px;
     width: 436px;
     gap: 33px;
+
+    &--catalog {
+      gap: 36px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -49,7 +53,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: 4px;
         left: 0;
         height: 2px;
         background: $bg-basic-green;
