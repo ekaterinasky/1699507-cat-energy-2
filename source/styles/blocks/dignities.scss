@@ -182,8 +182,8 @@
     background-color: $optional-color;
     mask-image: url("../../icons/stack.svg#arrow");
     mask-repeat: no-repeat;
-    mask-size: 18px 10px;
-    width: 18px;
+    mask-size: 23px 10px;
+    width: 23px;
     height: 10px;
     left: 117px;
     bottom: 25px;
@@ -201,19 +201,19 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    padding-left: 1px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &:hover::before {
     mask-size: 32px 10px;
     width: 32px;
   }
 
   &:active {
-    opacity: 0.6;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-left: 1px;
-    font-size: 20px;
-    line-height: 30px;
+    opacity: 0.5;
   }
 }
 

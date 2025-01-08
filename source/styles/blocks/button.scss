@@ -11,6 +11,15 @@
   text-decoration: none;
   display: block;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
   &--products {
     display: block;
     width: 100%;
@@ -35,6 +44,10 @@
     color: #444444;
     padding: 10px 80px;
     width: 280px;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
 
     @media (min-width: $tablet-width) {
       width: 250px;
