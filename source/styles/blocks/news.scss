@@ -79,6 +79,10 @@
   border: 1px solid #cdcdcd;
   margin-bottom: 16px;
 
+  &--error {
+    border: 2px solid #ff8282;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 376px;
