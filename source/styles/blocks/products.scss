@@ -2,8 +2,6 @@
 @use "../common/variables.scss" as *;
 
 .products {
-  padding-top: 66px;
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;

@@ -161,6 +161,7 @@
   width: 200px;
   min-height: 54px;
   margin-left: 20px;
+  margin-top: 4px;
 
   br {
     display: none;
@@ -180,6 +181,10 @@
     &--change {
       margin-top: 33px;
       margin-left: -2px;
+    }
+
+    &--another {
+      margin-top: 29px;
     }
   }
 

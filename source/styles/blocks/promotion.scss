@@ -2,10 +2,8 @@
 @use "../common/variables.scss" as *;
 
 .promotion {
-  position: relative;
-  top: 65px;
   padding-top: 27px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.9) 302px, #ffffff 302px), url("../../images/index-images/cat-bg-mobile@1x.jpeg"), linear-gradient(#ffffff -4%, #454449 4%);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.9) 302px, #ffffff 302px), image-set("../../images/index-images/cat-bg-mobile@1x.webp" 1x type("image/webp"), "../../images/index-images/cat-bg-mobile@2x.webp" 2x type("image/webp"), "../../images/index-images/cat-bg-mobile@1x.jpeg" 1x type("image/jpg"), "../../images/index-images/cat-bg-mobile@2x.jpeg" 2x type("image/jpg")), linear-gradient(#ffffff -4%, #454449 4%);
   background-repeat: no-repeat;
   object-fit: cover;
   background-position: top center;
@@ -15,10 +13,6 @@
     background: none;
     position: static;
   }
-}
-
-.promotion__wrapper {
-
 }
 
 .promotion__header {
@@ -73,6 +67,7 @@
     line-height: 20px;
     text-align: left;
     margin-bottom: 50px;
+    margin-left: 1px;
   }
 }
 

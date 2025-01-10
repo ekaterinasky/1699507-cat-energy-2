@@ -68,8 +68,7 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #cdcdcd;
-    padding-bottom: 8px;
-    margin-bottom: 2px;
+    padding-bottom: 11px;
   }
 }
 
@@ -82,13 +81,10 @@
     margin-bottom: 21px;
 
     @media (min-width: $tablet-width) {
+      display: block;
       width: 170px;
       margin: 0 auto;
       margin-bottom: 86px;
-
-      span {
-        margin-left: -5px;
-      }
     }
   }
 
@@ -120,7 +116,7 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 24px;
   }
 }
 
@@ -152,10 +148,6 @@
     width: 132px;
     font-size: 20px;
     line-height: 24px;
-
-    span {
-      margin-left: -5px;
-    }
   }
 
   &--change {

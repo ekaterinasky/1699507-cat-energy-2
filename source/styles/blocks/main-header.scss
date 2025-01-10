@@ -6,7 +6,9 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(90deg, #ffffff 50%, rgba(104, 183, 56, 0.9,) 50%), url("../../images/index-images/cat-bg-desktop@2x.jpeg"), linear-gradient(90deg, #ffffff 50%, #454449 50%);
+    background-image: linear-gradient(90deg, #ffffff 50%, rgba(104, 183, 56, 0.9,) 50%), image-set("../images/index-images/cat-bg-desktop@1x.webp" 1x type("image/webp"), "../images/index-images/cat-bg-desktop@2x.webp" 2x type("image/webp"), "../images/index-images/cat-bg-desktop@1x.jpeg" 1x type("image/jpg"), "../images/index-images/cat-bg-desktop@2x.jpeg" 2x type("image/jpg")), linear-gradient(90deg, #ffffff 50%, #454449 50%);
+
+
     background-size: 100%, 1041px 694px;
     background-position: center, calc(50% + 520px) top;
     background-repeat: no-repeat;

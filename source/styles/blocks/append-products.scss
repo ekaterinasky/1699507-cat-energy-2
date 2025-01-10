@@ -157,7 +157,7 @@
 
 .append-products__surprise {
   background-color: rgba(104, 183, 56, 0.9);
-  background-image: linear-gradient(rgba(104, 183, 56, 0.9,) 100%, #ffffff 100%), url("../../images/cat-catalog@2x.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.9,) 100%, #ffffff 100%), image-set("../images/cat-catalog@1x.webp" 1x type("image/webp"), "../images/cat-catalog@2x.webp" 2x type("image/webp"), "../images/cat-catalog@1x.png" 1x type("image/png"), "../../images/cat-catalog@2x.png" 2x type("image/png"));
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
@@ -178,7 +178,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.9,) 100%, #ffffff 100%), url("../../images/cat-for-tablet-surprise@1x.jpeg");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.9,) 100%, #ffffff 100%), image-set("../images/cat-for-tablet-surprise@1x.webp" 1x type("image/webp"), "../images/cat-for-tablet-surprise@2x.webp" 2x type("image/webp"), "../images/cat-for-tablet-surprise@1x.jpeg" 1x type("image/jpg"), "../images/cat-for-tablet-surprise@2x.jpeg" 2x type("image/jpg"));
 
     &--present::before {
       margin-left: 79px;
@@ -190,7 +190,7 @@
     width: 245px;
     height: 288px;
     margin-left: 80px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.9,) 100%, #ffffff 100%), url("../../images/cat-catalog@2x.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.9,) 100%, #ffffff 100%), image-set("../../images/cat-catalog@1x.webp" 1x type("image/webp"), "../../images/cat-catalog@2x.webp" 2x type("image/webp"), "../../images/cat-catalog@1x.png" 1x type("image/png"), "../../images/cat-catalog@2x.png" 2x type("image/png"));
     background-position: center, -33px;
 
     &--present::before {

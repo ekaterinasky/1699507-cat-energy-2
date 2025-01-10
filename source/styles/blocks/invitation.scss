@@ -63,9 +63,10 @@
 .invitation__adress {
   margin: 0;
   width: 140px;
+  margin-top: 3px;
 
   &--change {
-    margin-top: 5px;
+    margin-top: 4px;
   }
 
   @media (min-width: $tablet-width) {
@@ -83,6 +84,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    margin-top: -2px;
 
     &--change {
       margin-top: 17px;

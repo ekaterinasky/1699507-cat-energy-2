@@ -15,7 +15,6 @@
   margin: 0;
   list-style-type: none;
   padding: 0;
-  margin-top: 66px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -100,7 +99,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 77px 63px 57px 52px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -182,18 +181,16 @@
     background-color: $optional-color;
     mask-image: url("../../icons/stack.svg#arrow");
     mask-repeat: no-repeat;
-    mask-size: 23px 10px;
-    width: 23px;
-    height: 10px;
-    left: 117px;
-    bottom: 25px;
+    mask-size: 34px 12px;
+    width: 34px;
+    height: 12px;
+    right: 125px;
+    bottom: 23px;
 
     @media (min-width: $tablet-width) {
-      bottom: 65px;
+      bottom: 66px;
       left: 183px;
       width: 32px;
-      height: 10px;
-      mask-size: 32px 10px;
     }
 
     @media (min-width: $desktop-width) {
@@ -208,8 +205,8 @@
   }
 
   &:hover::before {
-    mask-size: 32px 10px;
-    width: 32px;
+    mask-size: 38px 14px;
+    width: 38px;
   }
 
   &:active {
@@ -226,8 +223,8 @@
 
   @media (min-width: $tablet-width) {
     width: 340px;
-    padding-left: 0;
-    margin-bottom: 26px;
+    padding: 0;
+    margin-bottom: 51px;
     border: none;
     font-size: 16px;
     line-height: 24px;
@@ -239,7 +236,7 @@
 
   @media (min-width: $desktop-width) {
     width: 457px;
-    padding-bottom: 0;
+    margin-bottom: 27px;
   }
 }
 
