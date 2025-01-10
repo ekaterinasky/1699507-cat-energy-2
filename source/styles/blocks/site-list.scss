@@ -69,16 +69,6 @@
       height: 2px;
       background: $bg-basic-green;
     }
-
-    &--active-index::before {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: -8px;
-      left: 0;
-      height: 2px;
-      background: #ffffff;
-    }
   }
 }
 
@@ -100,6 +90,16 @@
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
+
+    &--active-index::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -7px;
+      left: 0;
+      height: 2px;
+      background: #ffffff;
+    }
   }
 
   &--change {

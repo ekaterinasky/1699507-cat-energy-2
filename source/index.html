@@ -12,6 +12,9 @@
   <link rel="manifest" href="manifest.webmanifest">
   <!-- Подключение стилей -->
   <link rel="stylesheet" href="styles/styles.css">
+  <!-- Оптимизация загрузки шрифтов -->
+  <link rel="preload" href="../../fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../../fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <!-- Подключение скриптов -->
   <script src="scripts/index.js" defer></script>
 </head>
@@ -21,14 +24,14 @@
     <nav class="main-nav">
       <div class="wrapper">
         <!-- Close menu - main-nav__usermain-header__logo--closed / Open menu - main-nav__user--opened  -->
-        <div class="main-nav__user main-nav__user--closed">
+        <div class="main-nav__user main-nav__user--opened">
           <a class="main-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" width="60" height="50" type="image/svg+xml">
               <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="33" height="38" type="image/svg+xml">
               <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип - кот">
             </picture>
-            <img class="logo-slogan logo-slogan__change" src="images/logo-text.svg" alt="Логотип - слоган" width="101" height="18">
+            <img class="logo-slogan" src="images/logo-text.svg" alt="Логотип - слоган" width="101" height="18">
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -36,7 +39,7 @@
           <div class="main-nav__wrapper">
             <ul class="site-list main-nav__list site-list--change">
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__link site-list__item--active-index" href="index.html">
+                <a class="site-list__link site-list__link--active-index" href="index.html">
                   Главная
                 </a>
               </li>
@@ -164,12 +167,12 @@
       </div>
     </section>
   </main>
-  <section class="invitation invitation__index">
+  <section class="invitation invitation--index">
     <div class="wrapper">
       <div class="invitation__wrapper">
         <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
         <p class="invitation__description">приглашаем <br> к сотрудничеству дилеров!</p>
-        <div class="intation__container">
+        <div class="invitation__container">
           <p class="invitation__adress">ул. Большая Конюшенная, д. 19/8</p>
           <p class="invitation__adress invitation__adress--change">Санкт-Петербург</p>
         </div>

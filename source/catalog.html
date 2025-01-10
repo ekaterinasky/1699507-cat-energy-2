@@ -5,7 +5,16 @@
   <meta charset="UTF-8">
   <title>Питание для котов</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Подключение фавиконок -->
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/icon-180.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <!-- Подключение стилей -->
   <link rel="stylesheet" href="styles/styles.css">
+  <!-- Оптимизация загрузки шрифтов -->
+  <link rel="preload" href="../../fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../../fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -15,13 +24,13 @@
       <div class="wrapper">
         <!-- Close menu - main-nav__usermain-header__logo--closed / Open menu - main-nav__user--opened  -->
         <div class="main-nav__user main-nav__user--closed">
-          <a class="main-header__logo main-header__logo--catalog" href="index.html">
+          <a class="main-nav__logo main-nav__logo--catalog" href="index.html">
             <picture>
               <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" width="60" height="50" type="image/svg+xml">
               <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="33" height="38" type="image/svg+xml">
-              <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип - кот">
+              <img class="main-nav__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип - кот">
             </picture>
-            <img class="logo-slogan logo-slogan__change" src="images/logo-text.svg" alt="Логотип - слоган" width="101" height="18">
+            <img class="logo-slogan" src="images/logo-text.svg" alt="Логотип - слоган" width="101" height="18">
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -363,7 +372,7 @@
         <div class="invitation__wrapper">
           <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
           <p class="invitation__description">приглашаем <br> к сотрудничеству дилеров!</p>
-          <div class="intation__container">
+          <div class="invitation__container">
             <p class="invitation__adress">ул. Большая Конюшенная, д. 19/8</p>
             <p class="invitation__adress invitation__adress--change">Санкт-Петербург</p>
           </div>
