@@ -45,20 +45,6 @@
 
   &--active {
     display: block;
-
-    @media (min-width: $tablet-width) {
-      position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 4px;
-        left: 0;
-        height: 2px;
-        background: $bg-basic-green;
-      }
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -69,8 +55,33 @@
     &--change {
       margin-left: 3px;
     }
+
+    &--active {
+      position: relative;
+    }
+
+    &--active::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 4px;
+      left: 0;
+      height: 2px;
+      background: $bg-basic-green;
+    }
+
+    &--active-index::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -8px;
+      left: 0;
+      height: 2px;
+      background: #ffffff;
+    }
   }
 }
+
 
 .site-list__link {
   position: relative;
